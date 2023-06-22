@@ -1,0 +1,62 @@
+.foglio1,.foglio2,.foglio3,.foglio4,.foglio5,.foglio6,.foglio7,.foglio8{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    box-shadow: 6px 5px 18px 7px rgba(0,0,0,0.65);
+
+}
+
+.contenitor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.bg-pan-left {
+    -webkit-animation: bg-pan-left 8s both;
+            animation: bg-pan-left 8s both;
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+    background-color: blue;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-color: yellow;
+  }
+}
+  
+
+.foglio1,.foglio5{
+    background-color: brown;
+    transform: rotate(365deg);
+}
+.foglio3{
+    background-color: rgb(42, 165, 159);
+   transform: rotate(1deg);
+}
+.foglio7{
+    background-color: rgb(42, 165, 52);
+    transform: rotate(355deg);
+}
+.foglio4{
+    background-color: rgb(130, 131, 56);
+}
+
+
+.puff-in-top {
+
+	        animation: puff-in-top 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@keyframes puff-in-top {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+}

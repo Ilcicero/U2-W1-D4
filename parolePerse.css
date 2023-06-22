@@ -1,0 +1,49 @@
+.paragrafo{
+    padding: 10px;
+    width: 500px;
+    
+    position: relative;
+}
+
+
+.parole-cicliche {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 185px;
+    z-index: 1;
+    opacity: 0;
+    animation: cambio-parola 10s infinite;
+    color: aqua;
+  }
+  
+  .parole-cicliche:nth-child(1) {
+    animation-delay: 2s;
+  }
+  
+  .parole-cicliche:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  .parole-cicliche:nth-child(3) {
+    animation-delay: 8s;
+  }
+  
+  @keyframes cambio-parola {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(0%);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(58%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+  }
