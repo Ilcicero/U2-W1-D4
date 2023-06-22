@@ -5,16 +5,22 @@
     box-shadow: 6px 5px 18px 7px rgba(0,0,0,0.65);
 
 }
-
+.foglio2{
+  background-color: orangered;
+}
+.foglio6{
+  background-color: darkgoldenrod;
+}
 .contenitor{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
    
 }
 .bg-pan-left {
-    -webkit-animation: bg-pan-left 8s both;
-            animation: bg-pan-left 8s both;
+    
+  animation: bg-pan-left 8s both;
 }
 @keyframes bg-pan-left {
   0% {
@@ -28,10 +34,14 @@
 }
   
 
-.foglio1,.foglio5{
+.foglio1{
     background-color: brown;
     transform: rotate(365deg);
 }
+.foglio5{
+  background-color: slateblue;
+}
+
 .foglio3{
     background-color: rgb(42, 165, 159);
    transform: rotate(1deg);
@@ -47,16 +57,19 @@
 
 .puff-in-top {
 
-	        animation: puff-in-top 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+ animation: puff-in-top 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 @keyframes puff-in-top {
-    0% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
+    0% {     
+     transform: scale(2);
+    transform-origin: 50% 0%;
+     filter: blur(4px);
       opacity: 0;
     }
 }
+
+
+
+ 
+
+
